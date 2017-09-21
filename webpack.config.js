@@ -19,6 +19,9 @@ module.exports = {
     plugins:[
         new HtmlWebpackPlugin({
             title: 'snabbdom',
+            chunks: ['app'],
+            hash:true,
+            template: path.resolve(__dirname, 'index.html')
         }),
         new CleanWebpackPlugin([dist])
     ],
