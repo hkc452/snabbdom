@@ -20,7 +20,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'snabbdom',
             chunks: ['app'],
-            hash:true,
+            // hash:true,
             template: path.resolve(__dirname, 'index.html')
         }),
         new CleanWebpackPlugin([dist])
